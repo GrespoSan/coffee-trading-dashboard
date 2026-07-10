@@ -32,6 +32,6 @@ st.markdown(f"### <span style='color:{color}'>{status}</span>", unsafe_allow_htm
 st.info(f"""
 **Analisi Sintetica:**
 - **Bias:** {cot_bias}
-- **Fase:** {phase}
+- **Fase:** {market_phase}
 Il sistema ha incrociato i dati macro. La configurazione attuale indica una condizione di mercato orientata alla {status.split(' ')[0]}.
 """)
