@@ -39,7 +39,7 @@ flusso_netto_comm = comm_long - comm_short
 st.header("2. Elaborazione Matematica")
 calc1, calc2, calc3 = st.columns(3)
 calc1.metric("Variazione % Open Interest", f"{pct_delta_oi:.2f}%")
-calc2.metric("Flusso Netto Speculativo (MM)", f"{flusso_netto_mm:+.0f}")
+calc2.metric("Flusso Netto Speculativo Managed Money (MM)", f"{flusso_netto_mm:+.0f}")
 calc3.metric("Flusso Netto Commerciale", f"{flusso_netto_comm:+.0f}")
 
 st.divider()
