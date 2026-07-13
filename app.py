@@ -36,7 +36,7 @@ pct_delta_oi = (oi_var / (oi_tot - oi_var)) * 100 if (oi_tot - oi_var) != 0 else
 flusso_netto_mm = mm_long - mm_short
 flusso_netto_comm = comm_long - comm_short
 
-st.header("2. Elaborazione Matematica (Algoritmo)")
+st.header("2. Elaborazione Matematica")
 calc1, calc2, calc3 = st.columns(3)
 calc1.metric("Variazione % Open Interest", f"{pct_delta_oi:.2f}%")
 calc2.metric("Flusso Netto Speculativo (MM)", f"{flusso_netto_mm:+.0f}")
