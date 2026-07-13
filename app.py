@@ -3,7 +3,7 @@ import yfinance as yf
 
 # --- Configurazione Pagina ---
 st.set_page_config(page_title="Dashboard COMM_COT_T1", layout="wide")
-st.title("🛡️ Dashboard di Validazione: COMM_COT_T1")
+st.title("🛡️ Dashboard di Validazione")
 
 # --- BLOCCO 1: Inserimento Dati (Rapporto COT) ---
 st.header("1. Inserimento Dati")
