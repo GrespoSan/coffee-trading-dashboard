@@ -28,7 +28,7 @@ with col3:
 
 with col4:
     st.subheader("Term Structure")
-    term_struct = st.radio("Stato attuale (inserimento manuale vedi indicatore in Tradingview):", ["Backwardation", "Contango"])
+    term_struct = st.radio("Stato attuale (inserimento manuale vedi indicatore in Tradingview):", ["Backwardation (verde)", "Contango (rosso)"])
 
 # --- BLOCCO 2: Elaborazione Matematica ---
 # Formule esatte del tuo protocollo
