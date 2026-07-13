@@ -5,22 +5,6 @@ import yfinance as yf
 st.set_page_config(page_title="Dashboard COMM_COT_T1", layout="wide")
 st.title("🛡️ Dashboard di Validazione: COMM_COT_T1")
 
-# --- Recupero Prezzo in Tempo Reale ---
-@st.cache_data(ttl=3600)
-def get_coffee_price():
-    try:
-        ticker = yf.Ticker("KC=F")
-        return ticker.history(period="1d")['Close'].iloc[-1]
-    except:
-        return None
-
-col_header1, col_header2 = st.columns([3, 1])
-with col_header2:
-    prezzo = get_coffee_price()
-    st.metric(label="Prezzo Caffè (KC=F)", value=f"{prezzo:.2f} USD" if prezzo else "Dati non disponibili")
-
-st.divider()
-
 # --- BLOCCO 1: Inserimento Dati (Rapporto COT) ---
 st.header("1. Inserimento Dati")
 st.caption("Trascrivi i dati dal blocco base del terminale")
