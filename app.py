@@ -111,7 +111,8 @@ if flusso_netto_mm > 0 and flusso_netto_comm < 0:
     st.write(f"""
     **Cosa sta succedendo in parole semplici:**
     Siamo in una fase di **piena armonia rialzista**. I grandi speculatori stanno comprando in modo aggressivo (Flusso: `{flusso_netto_mm:+.0f}`) e l'Open Interest sale. I commerciali stanno vendendo contratti commerciali per coprire la produzione futura, comportamento normalissimo in un mercato forte.
-    
+    """)
+    st.error(f"""
     **💡 Conclusione:** Il trend è solido, asseconda il segnale Long di TradingView e cerca conferme grafiche per l'operatività.
     """)
 
@@ -121,7 +122,8 @@ elif flusso_netto_mm < 0 and flusso_netto_comm > 0:
     **Cosa sta succedendo in parole semplici:**
     1. **OGGI / BREVE TERMINE:** I grandi fondi speculativi stanno vendendo pesantemente (Flusso Speculativo: `{flusso_netto_mm:+.0f}`). Il prezzo risente della pressione immediata.
     2. **PROSSIME SETTIMANE / MEDIO TERMINE:** I Commerciali stanno assorbendo tutto e accumulano Long. Stanno fabbricando un pavimento.
-    
+    """)
+    st.error(f"""
     **💡 Conclusione:** Nel brevissimo è Short, ma monitora il grafico perché ci stiamo preparando a girarci Long.
     """)
 
@@ -131,7 +133,8 @@ elif flusso_netto_mm > 0 and flusso_netto_comm > 0:
     **Cosa sta succedendo in parole semplici:**
     1. **OGGI / BREVE TERMINE:** I grandi fondi speculativi stanno spingendo il mercato verso l'alto o ricoprendo le vendite (Flusso Speculativo: `{flusso_netto_mm:+.0f}`). Il prezzo attuale mostra ancora forza inerziale rialzista.
     2. **PROSSIME SETTIMANE / MEDIO TERMINE:** I Commerciali ritengono che questi prezzi siano ottimi per fare coperture e stanno vendendo massicciamente (Flusso Commerciale: `{flusso_netto_comm:+.0f}`). Stanno costruendo un tetto al mercato.
-    
+    """)
+    st.error(f"""
     **💡 Conclusione:** Il trend di brevissimo è ancora Long, ma la Smart Money si sta posizionando Short per un'inversione ribassista nelle prossime settimane. Proteggi i profitti dei tuoi Long e non inseguire i massimi.
     """)
 
